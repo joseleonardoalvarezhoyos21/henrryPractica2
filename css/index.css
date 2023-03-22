@@ -330,7 +330,7 @@ footer{
     nav{
         
         max-width: 992px;
-        min-width: 769px;
+        min-width: 495px;
         width: 100%;
         
     }
@@ -418,87 +418,110 @@ footer{
 }
 
 @media(max-width: 768px){
-    body{
-       width: 100%;
-    }
-    nav{
-        
-     min-width: 495px;
-    }
-    header{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    background-color: #1e172f;
-        align-items: center;
-               
-    }
-    .textoParte2 h3{
-        
-        width: 90%;
-        font-size: 30px;
-        
-    }
-    .textoParte2{
-        width: 90%;
-    }
 
+body{
+    width: 100%;
+}
+.pagina{
+    width: 769px;
+    height: auto;
+}
+nav{
+    min-width: 495px;
+    
+}
+.pc{
+    display: none;
+    
+}
+.textoParte2{
+    height: 100%;
+    margin-left: 100px;
+    margin: 2%;
+
+}
+.textoParte2 h3{
+    margin-left: 150px;
+}
+.textoParte2  p{
+    margin-left: 320px;
+    text-align: center;
+}
+
+.textoParte2 h4{
+    margin-left: 350px;
+    margin-bottom: 35px;
+}
+#contenedoresPrecios{
+    flex-flow: row wrap;
+
+}
+.contenedorBlanco{
+    width: 500px;
+    margin-bottom: 3%;   
+}
+#izquierdaTexto{
+    margin-right:100px ;
+    font-size: 20px;
+    padding-top: 0px;
+}
+#botones{
+    margin-top: 5%;
+    
+}
+#derechaImagen{
+    display: none;
+}
+#izquierdaTexto{
+    width: 100%;
+}
+#parte3{
+    height: auto;
+}
+
+.telefono{
+    display: none;
+}
 }
 /*solo salta hacer la ultima<3*/
 @media(max-width: 480px){
-    
+   
     body{
-        width: 100%;
-    }
-    
-    
-    .pagina{
-        width: 769px;
-        height: auto;
+        width: 770px;
+        
     }
     nav{
-        width: 769px;
-        
+    flex-wrap: wrap; 
+    height: 150px;
+    flex-direction: column;
+        display: flex;
     }
-    .pc{
-        display: none;
-        
+    nav ul li a{
+        padding: 5px
+    }
+    #parte3 h3 {
+    padding: 9px;
+    
+    }
+    footer{
+        margin: 10px;
+    }
+    ul{
+        padding-left: 0px;
+    }
+    footer{
+        width:750px;
+    }
+    header{
+        flex-direction: column;
+        display: flex;
+    }
+    .logo{
+        width: 200px;
     }
     .textoParte2{
-        height: 100%;
-        margin-left: 100px;
-        margin: 2%;
-
-    }
-    .textoParte2 h3{
-        margin-left: 150px;
-    }
-    .textoParte2  p{
-        margin-left: 320px;
-        text-align: center;
-    }
-
-    .textoParte2 h4{
-        margin-left: 350px;
-        margin-bottom: 35px;
-    }
-    #contenedoresPrecios{
-        flex-flow: row wrap;
-
-    }
-    .contenedorBlanco{
-        width: 500px;
-        margin-bottom: 3%;   
-    }
-    .precio{
+        font-size: 15px;
         
-    }
-    #parte3{
-        height: auto;
-    }
-
-    .telefono{
-        display: none;
     }
 }
 
